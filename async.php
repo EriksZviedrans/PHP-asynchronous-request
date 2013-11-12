@@ -1,7 +1,7 @@
 <?php
 /**
  * @category   PHP asynchronous request
- * @author     zviederi <eriks.zviedrans@gmail.com>
+ * @author     <eriks.zviedrans@gmail.com>
  * @link       https://github.com/EriksZviedrans/PHP-asynchronous-request
  */
 
@@ -14,6 +14,7 @@ class Async_request {
 
     /**
      * __call catch function name and parameters
+     * also, check if the function exists before calling it
      * @param  string $method function name
      * @param  array  $params function parameters
      * @return <null>
@@ -34,7 +35,7 @@ class Async_request {
      */
     public function post_async($function, $params) {
 
-        $url = "http://localhost:".$this->port."/async/index.php?async=".$function;
+        $url = "http://localhost:".$this->port."/index.php?async=".$function;
 
         $post_params = array();
 
@@ -60,7 +61,7 @@ class Async_request {
     }
 
     /**`
-     * call function
+     * execute function
      * @return <null>
      */
     public function execute() {
@@ -68,7 +69,7 @@ class Async_request {
         $function = (string)$request['async'];
         unset($request['async']);
         /**
-         * There we can use a Reflection class
+         * Also, there we can use a Reflection class
          */
         require 'functions.php';
         call_user_func_array($function, $request);

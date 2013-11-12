@@ -1,8 +1,14 @@
 <?php
 /**
  * @category   PHP asynchronous request
- * @author     zviederi <eriks.zviedrans@gmail.com>
+ * @author     <eriks.zviedrans@gmail.com>
  * @link       https://github.com/EriksZviedrans/PHP-asynchronous-request
+ */
+
+/**
+ * write a random number into file
+ * @param  integer $number  random number
+ * @return <null>
  */
 function writeToFile($number) {
     sleep(30);
