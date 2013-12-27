@@ -4,4 +4,4 @@ There we can call any php function where isn't a response(callback), so, functio
 Just download or pull and let's try!
 
 A main idea is from Mark Turansky blog(http://blog.markturansky.com/archives/205), where
-author writed idea - how to use asynchronous request.
+author wrote the idea - how to use asynchronous request.
