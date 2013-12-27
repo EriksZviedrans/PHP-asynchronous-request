@@ -1,5 +1,5 @@
 It's easy way to call asynchronous request in PHP used magic method __call, PHP sockets and HTTP header.
-There we can call any php function where won't a response(callback), so, function dosen't have return.
+There we can call any php function where isn't a response(callback), so, function dosen't have a return.
 
 Just download or pull and let's try!
 
